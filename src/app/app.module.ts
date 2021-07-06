@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { HomeComponent } from './home/home.component';
 import { FirstComponent } from './first/first.component';
 import { PhotoComponent } from './photo/photo.component';
@@ -28,8 +27,7 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(
       routes
-    ),
-    ZXingScannerModule
+    )
   ],
   providers: [],
   bootstrap: [AppComponent],
