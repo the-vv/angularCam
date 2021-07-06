@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,6 +18,12 @@
     "@angular/platform-browser": "~12.0.0",
     "@angular/platform-browser-dynamic": "~12.0.0",
     "@angular/router": "~12.0.0",
+    "@zxing/browser": "^0.0.9",
+    "@zxing/library": "^0.18.6",
+    "@zxing/ngx-scanner": "^3.2.0",
+    "guru-qrcode-reader": "^0.0.8",
+    "jsqr": "^1.4.0",
+    "ng2-qrcode-reader": "^0.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
