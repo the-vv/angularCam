@@ -68,6 +68,7 @@ export class FirstComponent {
 
     if (code) {
       this.stop();
+      console.log(code);
       alert(code.data);
     } else {
       this.timer = setTimeout(() => { this.checkImage(); }, 100)

@@ -59,15 +59,4 @@ export class PhotoComponent {
     this.stop()
     this.imgSrc = this.canvas.nativeElement.toDataURL();
   }
-
-  // checkImage() {
-  //   const WIDTH = this.video.nativeElement.clientWidth;
-  //   const HEIGHT = this.video.nativeElement.clientHeight;
-  //   this.canvas.nativeElement.width = WIDTH;
-  //   this.canvas.nativeElement.height = HEIGHT;
-  //   const ctx = this.canvas.nativeElement.getContext('2d') as CanvasRenderingContext2D;
-  //   ctx.drawImage(this.video.nativeElement, 0, 0, WIDTH, HEIGHT)
-  //   const imageData = ctx.getImageData(0, 0, WIDTH, HEIGHT)
-  // }
-
 }

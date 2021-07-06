@@ -1,0 +1,14 @@
+<div class="container"  *ngIf="!fileSelected">
+    <p class="h4">choose any file</p>
+    <input type='file' (change)="onSelectFile($event)">
+    <p class="h4 mt-4">Or use your camera (Mobile only)</p>
+    <input type="file" id="imageFile" capture="user" accept="image/*" (change)="onSelectFile($event)">
+</div>
+
+<div class="container" *ngIf="fileSelected">
+    <apan class="h5">Selected file</apan>
+    <button class="btn btn-danger btn-sm d-block" (click)="removeFile()">Remove file</button>
+    <img [src]="imgSrc" alt="" *ngIf="imgSrc">
+    <p *ngIf="!imgSrc">No preview</p>
+    <p>Selected File: {{fileSelected.name}}</p>
+</div>
