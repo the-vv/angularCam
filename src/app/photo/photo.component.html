@@ -1,0 +1,11 @@
+<div class="container"  [class.d-block]="!isCaptured" [class.d-none]="isCaptured">
+    <video #video id="video" autoplay style="width: 500px; object-fit:cover"></video>
+    <button (click)="takeSnap()" class="d-block btn btn-primary">Take photo</button>
+</div>
+<div class="container" [class.d-block]="isCaptured" [class.d-none]="!isCaptured">
+    <canvas #canvas id="canvas" width="800px" height="600px" class="d-block"></canvas>
+    <a [href]="imgSrc" class="btn btn-link" download="capture">
+        Download image
+        <!-- <img [src]="imgSrc" alt="Captured image"> -->
+    </a>
+</div> 

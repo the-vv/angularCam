@@ -3,26 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { SecondComponent } from './second/second.component';
 import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { HomeComponent } from './home/home.component';
 import { FirstComponent } from './first/first.component';
-import { ThreeComponent } from './three/three.component';
+import { PhotoComponent } from './photo/photo.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'first', component: FirstComponent },
-  { path: 'second', component: SecondComponent },
-  { path: 'three', component: ThreeComponent }
+  { path: 'qr', component: FirstComponent },
+  { path: 'photo', component: PhotoComponent },
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    SecondComponent,
     HomeComponent,
     FirstComponent,
-    ThreeComponent,
+    PhotoComponent,
   ],
   imports: [
     BrowserModule,
